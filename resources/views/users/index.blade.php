@@ -12,6 +12,11 @@
                     {{ session('success') }}
                 </div>
             @endif
+              @if(session('error'))
+                <div class="bg-red-200 text-red-800 p-4 rounded mb-4">
+                    {{ session('error') }}
+                </div>
+            @endif
             <div class="mb-4">
                 <a
                     href="{{ route('users.create') }}"
