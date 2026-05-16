@@ -140,4 +140,4 @@ password: password
 
 # Deployment
 
-Coming soon
+VPS
