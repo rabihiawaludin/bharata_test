@@ -11,7 +11,8 @@ window.Echo = new Echo({
     wsPort: import.meta.env.VITE_REVERB_PORT ?? 8080,
     wssPort: import.meta.env.VITE_REVERB_PORT ?? 8080,
     forceTLS: true,
-    enabledTransports: ['ws'],
+    enabledTransports: ['ws', 'wss'],
+    path: '/app', // 🔥 penting
 });
 
 window.axios = axios;
